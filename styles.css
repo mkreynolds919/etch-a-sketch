@@ -5,3 +5,8 @@ body {
     justify-content: center;
 }
 
+.container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
