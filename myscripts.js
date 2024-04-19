@@ -13,6 +13,10 @@ button.addEventListener("click", () => {
     createGrid(dimension);
 });
 
+function randRGB() {
+    return Math.floor(Math.random() * 255);
+}
+
 function createGrid(dimension = 16) { 
     for (var x = 1; x <= dimension; x++) {
         const row = document.createElement("div");
@@ -34,7 +38,7 @@ function createGrid(dimension = 16) {
 
     cells.forEach((cell) => {
         cell.addEventListener("mouseover", () => {
-            cell.style.backgroundColor = "blue";
+            cell.style.backgroundColor = `rgb(${randRGB()}, ${randRGB()}, ${randRGB()})`;
         });
     });
 }
