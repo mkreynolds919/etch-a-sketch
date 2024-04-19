@@ -3,7 +3,12 @@ const container = document.querySelector(".container");
 const button = document.querySelector("button");
 
 button.addEventListener("click", () => {
-    let dimension = prompt("How many squares per side would you like?");
+    while (True) {
+        dimension = prompt("How many squares per side would you like?");
+        if (dimension <= 100) {
+            break;
+        }
+    }
     deleteGrid();
     createGrid(dimension);
 })
