@@ -8,5 +8,7 @@ body {
 .container {
     display: flex;
     width: 50%;
+    height: 100vh;
     flex-direction: column;
+    background-color: grey;
 }
